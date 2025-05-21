@@ -1,0 +1,103 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co/N2kcxNq2/virat.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 2000000
+  },
+  {
+    "playerId": 2,
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://i.ibb.co/5h9ccLTg/ben-stokes.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm fast-medium",
+    "biddingPrice": 1800000
+  },
+  {
+    "playerId": 3,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://i.ibb.co/DgjGkWcR/Steve-Smith.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg break",
+    "biddingPrice": 1600000
+  },
+  {
+    "playerId": 4,
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "image": "https://i.ibb.co/PZYrrdkD/Kagiso-Rabada.jpg",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": 1500000
+  },
+  {
+    "playerId": 5,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co/vCrhwZRZ/Babar-Azam.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 1700000
+  },
+  {
+    "playerId": 6,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co/mr3n5zzC/Trent-Boult.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPrice": 1400000
+  },
+  {
+    "playerId": 7,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://example.com/images/rashid_khan.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg spin",
+    "biddingPrice": 1750000
+  },
+  {
+    "playerId": 8,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/DgjMhFmS/Shakib-Al-Hasan.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm orthodox",
+    "biddingPrice": 1600000
+  },
+  {
+    "playerId": 9,
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.ibb.co/LhPdLx9X/Joe-Root.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 1550000
+  },
+  {
+    "playerId": 10,
+    "name": "Hardik Pandya",
+    "country": "India",
+    "image": "https://i.ibb.co/0Rms1PPq/Hardik-Pandya.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium-fast",
+    "biddingPrice": 1650000
+  }
+ 
+]
