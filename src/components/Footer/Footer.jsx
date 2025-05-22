@@ -38,7 +38,8 @@ const Footer = () => {
                     placeholder="username@gmail.com"
                     className="input input-bordered join-item text-black"
                   />
-                  <button className="btn btn-primary join-item ">
+                  {/* <img  className="join-item w-24  rounded-none" src="/public/photos/Frame 11.png" alt="" /> */}
+                  <button className="btn  bg-linear-to-r from-pink-300 to-yellow-300  join-item ">
                     Subscribe
                   </button>
                 </div>

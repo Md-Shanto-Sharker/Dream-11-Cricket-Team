@@ -13,7 +13,7 @@ const Subscribe = () => {
         <div className="flex gap-5 justify-center mt-5">
           <input type="text" placeholder="Enter your email" className="input" />
 
-          <img className="w-24" src="/public/photos/Frame 11.png" alt="" />
+          <img className="w-24" src="/photos/Frame 11.png" alt="" />
         </div>
       </div>
     </div>

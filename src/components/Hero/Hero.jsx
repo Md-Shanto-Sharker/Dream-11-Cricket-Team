@@ -4,7 +4,7 @@ const Hero = ({handleClicked}) => {
     return (
         <div className='bg-[url(/photos/bg-shadow.png)] bg-no-repeat bg-gray-950 bg-cover bg-center  p-32 mx-auto mt-10 rounded-3xl'>
            <div className='flex justify-center mb-8'>
-             <img  className='w-[320px]' src="/public/photos/banner-main.png" alt="" />
+             <img  className='w-[320px]' src="/photos/banner-main.png" alt="" />
            </div>
             <h1 className='text-[#FFFFFF] text-[40px] font-bold text-center'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
             <p className='text-[#FFFFFF] text-[30px] text-center font-light my-4'>Beyond Boundaries Beyond Limits</p>
