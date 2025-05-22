@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Main = ({ handleAddPlayer, addPlayers ,handleRemove,handleRemove2}) => {
- 
-
-
+const Main = ({ handleAddPlayer, addPlayers, handleRemove, handleRemove2 }) => {
   const [add, setAdd] = useState(false);
   const handleAdd = () => {
     setAdd(true);
@@ -31,7 +28,9 @@ const Main = ({ handleAddPlayer, addPlayers ,handleRemove,handleRemove2}) => {
     <>
       <div className="flex justify-between items-center mb-10">
         {button ? (
-          <h1 className="font-bold text-3xl">Selected Player {addPlayers.length}/6</h1>
+          <h1 className="font-bold text-3xl">
+            Selected Player {addPlayers.length}/6
+          </h1>
         ) : (
           <h1 className="font-bold text-3xl">Available Players</h1>
         )}
@@ -78,7 +77,18 @@ const Main = ({ handleAddPlayer, addPlayers ,handleRemove,handleRemove2}) => {
                       <p className="text-[13px]">{add.battingType}</p>
                     </div>
                   </div>
-                  <button onClick={()=>{handleRemove(add.playerId);handleRemove2();}} className="hover:bg-red-400 p-2 "><RiDeleteBin6Line  size={20}  className="text-red-600 hover:text-white"/></button>
+                  <button
+                    onClick={() => {
+                      handleRemove(add.playerId);
+                      handleRemove2();
+                    }}
+                    className="hover:bg-red-400 p-2 "
+                  >
+                    <RiDeleteBin6Line
+                      size={20}
+                      className="text-red-600 hover:text-white"
+                    />
+                  </button>
                 </div>
               ))
             ) : (
@@ -87,7 +97,7 @@ const Main = ({ handleAddPlayer, addPlayers ,handleRemove,handleRemove2}) => {
               </h1>
             )}
 
-            <button className="btn bg-[#E7FE29] btn-outline border-2 border-black rounded-xl outline-2 outline-[#E7FE29] font-bold">
+            <button onClick={() => handleAvailable()} className="btn bg-[#E7FE29] btn-outline border-2 border-black rounded-xl outline-2 outline-[#E7FE29] font-bold">
               Add More Player
             </button>
           </div>
