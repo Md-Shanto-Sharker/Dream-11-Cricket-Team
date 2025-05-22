@@ -1,11 +1,11 @@
 import React from "react";
 import { FaFlag } from "react-icons/fa";
 
-const Cards = ({ player }) => {
+const Cards = ({ player ,handleAddPlayer,handleAdd}) => {
   return (
     <>
-    <div class="card bg-base-100  shadow-2xl border-2 border-blue-100 ">
-      <figure class="px-10 pt-10">
+    <div className="card bg-base-100  shadow-2xl border-2 border-blue-100 ">
+      <figure className="px-10 pt-10">
         <img
           className="w-[600px] h-64"
           src={player.image}
@@ -13,10 +13,10 @@ const Cards = ({ player }) => {
           //   class="rounded-xl"
         />
       </figure>
-      <div class="card-body ">
+      <div className="card-body ">
         <div className="flex gap-5">
           <img src="/public/photos/Group.png" alt="" />
-          <h2 class="card-title">{player.name}</h2>
+          <h2 className="card-title">{player.name}</h2>
         </div>
 
         <div className="flex justify-between items-center border-b-1 border-gray-300 ">
@@ -34,7 +34,7 @@ const Cards = ({ player }) => {
           </div>
           <div className="flex items-center justify-between">
             <h1 className="text-[16px] font-semibold">Price : $ {player.biddingPrice}</h1>
-            <button className="btn">Choose Player</button>
+            <button onClick={()=>{handleAddPlayer(player);handleAdd()}} className="btn">Choose Player</button>
           </div>
         </div>
       </div>

@@ -7,9 +7,21 @@ import Subscribe from "./components/Subscribe/Subscribe";
 // import toast, { Toaster } from "react-hot-toast";
 import { toast, ToastContainer } from "react-toastify";
 import Main from "./components/Main/Main";
-import Selected from "./components/Main/Selected";
+
+
+
+
 
 function App() {
+const [addPlayers,setAddPlayers] = useState([])
+const handleAddPlayer =(player) =>{
+  const newAddPlayers = [...addPlayers,player];
+  setAddPlayers(newAddPlayers)
+}
+
+
+
+
   const [money, setMoney] = useState(0);
   const handleClicked = () => {
     const newMoney = money + 6000000;
@@ -27,7 +39,7 @@ function App() {
       </header>
 
       <main className="w-11/12 mx-auto">
-        <Main></Main>
+        <Main handleAddPlayer={handleAddPlayer} addPlayers={addPlayers}></Main>
         <div className="mt-10">
         {/* <Selected></Selected> */}
 
