@@ -34,7 +34,7 @@ const Cards = ({ player ,handleAddPlayer,handleAdd}) => {
           </div>
           <div className="flex items-center justify-between">
             <h1 className="text-[16px] font-semibold">Price : $ {player.biddingPrice}</h1>
-            <button onClick={()=>{handleAddPlayer(player,player.playerId);handleAdd()}} className="btn">Choose Player</button>
+            <button onClick={()=>{handleAddPlayer(player,player.playerId);handleAdd()}} className="btn hover:bg-[#E7FE29]">Choose Player</button>
           </div>
         </div>
       </div>
