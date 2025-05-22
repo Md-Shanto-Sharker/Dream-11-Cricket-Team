@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = ({handleClicked}) => {
     return (
-        <div className='bg-[url(/public/photos/bg-shadow.png)] bg-no-repeat bg-gray-950 bg-cover bg-center  p-32 mx-auto mt-10 rounded-3xl'>
+        <div className='bg-[url(/photos/bg-shadow.png)] bg-no-repeat bg-gray-950 bg-cover bg-center  p-32 mx-auto mt-10 rounded-3xl'>
            <div className='flex justify-center mb-8'>
              <img  className='w-[320px]' src="/public/photos/banner-main.png" alt="" />
            </div>

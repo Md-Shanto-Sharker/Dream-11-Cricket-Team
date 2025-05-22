@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className="bg-black pt-72">
         <div className="flex justify-center">
-          <img src="/public/photos/logo-footer.png" alt="" />
+          <img src="/photos/logo-footer.png" alt="" />
         </div>
         <div className=" border-b-1 border-blue-950 ">
           <footer className="flex justify-between sm:footer-horizontal  text-base-content p-10 w-11/12 mx-auto ">
