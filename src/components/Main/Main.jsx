@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
-const Main = ({ handleAddPlayer, addPlayers }) => {
+const Main = ({ handleAddPlayer, addPlayers ,handleRemove}) => {
+ 
+
+
   const [add, setAdd] = useState(false);
   const handleAdd = () => {
     setAdd(true);
@@ -27,7 +31,7 @@ const Main = ({ handleAddPlayer, addPlayers }) => {
     <>
       <div className="flex justify-between items-center mb-10">
         {button ? (
-          <h1 className="font-bold text-3xl">Selected Player {0}</h1>
+          <h1 className="font-bold text-3xl">Selected Player {addPlayers.length}/10</h1>
         ) : (
           <h1 className="font-bold text-3xl">Available Players</h1>
         )}
@@ -44,7 +48,7 @@ const Main = ({ handleAddPlayer, addPlayers }) => {
             onClick={() => handleSelected()}
             className={`join-item btn ${button && "bg-[#E7FE29]"}`}
           >
-            Selected (0)
+            Selected ({addPlayers.length})
           </button>
         </div>
       </div>
@@ -54,7 +58,29 @@ const Main = ({ handleAddPlayer, addPlayers }) => {
         {button === true && (
           <div>
             {add ? (
-              addPlayers.map((add) => <p add={add} key={add.playerId}>{add.playerId}</p>)
+              addPlayers.map((add) => (
+                <div
+                  key={add.playerId}
+                  add={add}
+                  className="border-2 border-[#e6e6e6] items-center justify-between p-5 mb-5 flex rounded-xl
+                "
+                >
+                  <div className="flex gap-10">
+                    <div>
+                      <img
+                        className="w-24 h-14 rounded-lg"
+                        src={add.image}
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p className="font-bold text-2xl">{add.name}</p>
+                      <p className="text-[13px]">{add.battingType}</p>
+                    </div>
+                  </div>
+                  <button onClick={()=>handleRemove(add.playerId)} className="hover:bg-red-400 p-2 "><RiDeleteBin6Line  size={20}  className="text-red-600 hover:text-white"/></button>
+                </div>
+              ))
             ) : (
               <h1 className="font-bold text-4xl  mb-10">
                 No Players Add This Section
@@ -71,7 +97,8 @@ const Main = ({ handleAddPlayer, addPlayers }) => {
           <div className="grid grid-cols-3 gap-20">
             {players.map((player) => (
               <Cards
-                player={player} key={player.playerId}
+                player={player}
+                key={player.playerId}
                 handleAddPlayer={handleAddPlayer}
                 handleAdd={handleAdd}
               ></Cards>

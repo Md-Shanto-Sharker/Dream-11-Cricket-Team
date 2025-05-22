@@ -8,25 +8,32 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import { toast, ToastContainer } from "react-toastify";
 import Main from "./components/Main/Main";
 
-
-
-
-
 function App() {
-const [addPlayers,setAddPlayers] = useState([])
-const handleAddPlayer =(player) =>{
-  const newAddPlayers = [...addPlayers,player];
-  setAddPlayers(newAddPlayers)
-}
+  const [addPlayers, setAddPlayers] = useState([]);
+  const handleAddPlayer = (player) => {
+    if (money >= player.biddingPrice) {
+      const newAddPlayers = [...addPlayers, player];
+      setAddPlayers(newAddPlayers);
+      toast.success("Congrats !! This Player now in your squad");
+    } else {
+      toast.error("Your balance is low");
+    }
+  };
 
-
-
+  const handleRemove = (playerId) => {
+    const removePlayers = addPlayers.filter(
+      (mark) => mark.playerId !== playerId
+    );
+    setAddPlayers(removePlayers);
+  };
 
   const [money, setMoney] = useState(0);
-  const handleClicked = () => {
+  const handleClicked = (id) => {
     const newMoney = money + 6000000;
     setMoney(newMoney);
     toast.success("Credit Added to your Account");
+    handleRemove(id);
+    handleAddPlayer;
   };
 
   return (
@@ -39,11 +46,12 @@ const handleAddPlayer =(player) =>{
       </header>
 
       <main className="w-11/12 mx-auto">
-        <Main handleAddPlayer={handleAddPlayer} addPlayers={addPlayers}></Main>
-        <div className="mt-10">
-        {/* <Selected></Selected> */}
-
-        </div>
+        <Main
+          handleAddPlayer={handleAddPlayer}
+          addPlayers={addPlayers}
+          handleRemove={handleRemove}
+        ></Main>
+        <div className="mt-10">{/* <Selected></Selected> */}</div>
       </main>
 
       <footer className="relative   pt-32 mt-96">
