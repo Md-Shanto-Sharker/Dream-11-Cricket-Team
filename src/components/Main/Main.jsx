@@ -31,7 +31,7 @@ const Main = ({ handleAddPlayer, addPlayers ,handleRemove,handleRemove2}) => {
     <>
       <div className="flex justify-between items-center mb-10">
         {button ? (
-          <h1 className="font-bold text-3xl">Selected Player {addPlayers.length}/10</h1>
+          <h1 className="font-bold text-3xl">Selected Player {addPlayers.length}/6</h1>
         ) : (
           <h1 className="font-bold text-3xl">Available Players</h1>
         )}

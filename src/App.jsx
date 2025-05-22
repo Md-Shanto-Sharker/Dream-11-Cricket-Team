@@ -10,30 +10,39 @@ import Main from "./components/Main/Main";
 
 function App() {
   const [addPlayers, setAddPlayers] = useState([]);
-
   const handleAddPlayer = (player) => {
+    const alreadyAdded = addPlayers.find((p) => p.playerId === player.playerId);
+
+    if (alreadyAdded) {
+      toast.error("Player already added");
+      return;
+    }
+    if (addPlayers.length >= 6) {
+      toast.error("Squad full!!");
+      return;
+    }
+
     if (money >= player.biddingPrice) {
       const newAddPlayers = [...addPlayers, player];
-      const newMoney2 = money-player.biddingPrice
-      setMoney(newMoney2)
+      const newMoney2 = money - player.biddingPrice;
+      setMoney(newMoney2);
       setAddPlayers(newAddPlayers);
       toast.success("Congrats !! This Player now in your squad");
     } else {
       toast.error("Not enough money to buy this player.Claim some Credit");
     }
   };
-
+  console.log(addPlayers.length);
   const handleRemove = (playerId) => {
     const removePlayers = addPlayers.filter(
       (mark) => mark.playerId !== playerId
     );
     setAddPlayers(removePlayers);
-    
   };
 
-  const handleRemove2 =() =>{
-   toast.warn('Player removed')
-  }
+  const handleRemove2 = () => {
+    toast.warn("Player removed");
+  };
 
   const [money, setMoney] = useState(0);
   const handleClicked = (id) => {
@@ -57,7 +66,8 @@ function App() {
         <Main
           handleAddPlayer={handleAddPlayer}
           addPlayers={addPlayers}
-          handleRemove={handleRemove} handleRemove2={handleRemove2}
+          handleRemove={handleRemove}
+          handleRemove2={handleRemove2}
         ></Main>
         <div className="mt-10">{/* <Selected></Selected> */}</div>
       </main>
