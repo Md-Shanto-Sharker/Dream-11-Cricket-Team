@@ -72,9 +72,9 @@ function App() {
         <div className="mt-10">{/* <Selected></Selected> */}</div>
       </main>
 
-      <footer className="relative   pt-32 mt-96">
+      <footer className="relative pt-96  lg:pt-42 lg:mt-68">
         {/* Subscribe section */}
-        <div className="absolute w-full -top-24 z-10">
+        <div className="absolute w-full -top-1 md:top-56  lg:-top-24 z-10">
           <Subscribe></Subscribe>
         </div>
         <div className="relative ">

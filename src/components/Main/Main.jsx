@@ -104,7 +104,7 @@ const Main = ({ handleAddPlayer, addPlayers, handleRemove, handleRemove2 }) => {
         )}
 
         {button === false && (
-          <div className="grid grid-cols-3 gap-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20">
             {players.map((player) => (
               <Cards
                 player={player}

@@ -8,15 +8,15 @@ const Footer = () => {
           <img src="/photos/logo-footer.png" alt="" />
         </div>
         <div className=" border-b-1 border-blue-950 ">
-          <footer className="flex justify-between sm:footer-horizontal  text-base-content p-10 w-11/12 mx-auto ">
-            <nav>
+          <footer className="lg:flex md:grid   justify-between  sm:footer-horizontal  text-base-content p-10 w-11/12 mx-auto ">
+            <nav className="mb-2"> 
               <h6 className=" text-white font-bold text-2xl">About Us</h6>
               <p className="text-white font-light text-[12px] ">
                 We are a passionate team <br /> dedicated to providing the best{" "}
                 <br /> services to our customers.
               </p>
             </nav>
-            <nav>
+            <nav className="mb-2">
               <h6 className="font-bold text-white">Quick Links</h6>
 
               <li className="list-disc text-white text-[12px]">Home</li>
@@ -32,13 +32,13 @@ const Footer = () => {
               </p>
               <fieldset className="w-80 text-white text-[12px] ">
                 <label className="">Enter your email address</label>
-                <div className="join">
+                <div className="join mt-2">
                   <input
                     type="text"
                     placeholder="username@gmail.com"
                     className="input input-bordered join-item text-black"
                   />
-                  {/* <img  className="join-item w-24  rounded-none" src="/public/photos/Frame 11.png" alt="" /> */}
+                  
                   <button className="btn  bg-linear-to-r from-pink-300 to-yellow-300  join-item ">
                     Subscribe
                   </button>

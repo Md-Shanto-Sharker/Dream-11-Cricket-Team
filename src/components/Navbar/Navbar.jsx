@@ -2,17 +2,17 @@ import React from "react";
 
 const Navbar = ({money}) => {
   return (
-    <div className="flex justify-between items-center">
-      <div>
+    <div className="lg:flex  md:flex justify-between items-center">
+      <div className="flex justify-center ">
         <img src="/photos/logo.png" alt="" />
       </div>
-      <div className="flex items-center gap-20">
+      <div className="flex  justify-between lg:flex md:flex items-center lg:gap-20 gap-12 text-center">
         <p>Home</p>
-        <p>Fixture</p>
+        <p className="hidden lg:block md:block">Fixture</p>
         <p>Teams</p>
-        <p>Schedules</p>
-        <button className="btn font-bold text-[16px]">
-          <div className="flex items-center gap-2 ">
+        <p className="hidden lg:block md:block">Schedules</p>
+        <button className="btn font-bold text-[12px] lg:text-xl">
+          <div className="flex items-center gap-2">
             <p className="mb-1"> {money? money:0} Coin</p>
             <img src="/photos/dollar 1.png" alt="" />
           </div>

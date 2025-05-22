@@ -45,8 +45,8 @@
     "country": "Pakistan",
     "image": "https://i.ibb.co/vCrhwZRZ/Babar-Azam.jpg",
     "role": "Batsman",
-    "battingType": "Right-hand bat",
-    "bowlingType": "Right-arm offbreak",
+    "battingType": "Right-hand",
+    "bowlingType": "Right-arm",
     "biddingPrice": 170000
   },
   {
@@ -55,8 +55,8 @@
     "country": "New Zealand",
     "image": "https://i.ibb.co/mr3n5zzC/Trent-Boult.jpg",
     "role": "Bowler",
-    "battingType": "Right-hand bat",
-    "bowlingType": "Left-arm fast-medium",
+    "battingType": "Right-hand",
+    "bowlingType": "Left-arm",
     "biddingPrice": 140000
   },
   {
@@ -65,8 +65,8 @@
     "country": "Afghanistan",
     "image": "https://i.ibb.co/ynF1vMQk/Rashid-Khan2.jpg",
     "role": "Bowler",
-    "battingType": "Right-hand bat",
-    "bowlingType": "Right-arm leg spin",
+    "battingType": "Right-hand",
+    "bowlingType": "Right-arm",
     "biddingPrice": 175000
   },
   {
@@ -75,8 +75,8 @@
     "country": "Bangladesh",
     "image": "https://i.ibb.co/DgjMhFmS/Shakib-Al-Hasan.jpg",
     "role": "All-Rounder",
-    "battingType": "Left-hand bat",
-    "bowlingType": "Left-arm orthodox",
+    "battingType": "Left-hand ",
+    "bowlingType": "Left-arm",
     "biddingPrice": 160000
   },
   {
@@ -85,8 +85,8 @@
     "country": "England",
     "image": "https://i.ibb.co/LhPdLx9X/Joe-Root.jpg",
     "role": "Batsman",
-    "battingType": "Right-hand bat",
-    "bowlingType": "Right-arm offbreak",
+    "battingType": "Right-hand",
+    "bowlingType": "Right-arm ",
     "biddingPrice": 1550000
   },
   {
@@ -95,8 +95,8 @@
     "country": "India",
     "image": "https://i.ibb.co/0Rms1PPq/Hardik-Pandya.jpg",
     "role": "All-Rounder",
-    "battingType": "Right-hand bat",
-    "bowlingType": "Right-arm medium-fast",
+    "battingType": "Right-hand",
+    "bowlingType": "Right-arm",
     "biddingPrice": 1650000
   }
  
