@@ -14,7 +14,7 @@ const Navbar = ({money}) => {
         <button className="btn font-bold text-[16px]">
           <div className="flex items-center gap-2 ">
             <p className="mb-1"> {money? money:0} Coin</p>
-            <img src="/public/photos/dollar 1.png" alt="" />
+            <img src="/photos/dollar 1.png" alt="" />
           </div>
         </button>
       </div>
