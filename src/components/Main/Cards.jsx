@@ -7,7 +7,7 @@ const Cards = ({ player ,handleAddPlayer,handleAdd}) => {
     <div className="card bg-base-100  shadow-2xl border-2 border-blue-100 ">
       <figure className="px-10 pt-10">
         <img
-          className="w-[600px] h-64"
+          className="w-[600px] h-64 rounded-2xl"
           src={player.image}
           alt="Shoes"
           //   class="rounded-xl"

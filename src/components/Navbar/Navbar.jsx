@@ -4,7 +4,7 @@ const Navbar = ({money}) => {
   return (
     <div className="flex justify-between items-center">
       <div>
-        <img src="/public/photos/logo.png" alt="" />
+        <img src="/photos/logo.png" alt="" />
       </div>
       <div className="flex items-center gap-20">
         <p>Home</p>
